@@ -17,7 +17,7 @@ def getTimeStamp():
     return str(int(time.time()))
 
 def dt2ts(dtime):
-    utime = str( int( time.mktime( datetime.strptime( dtime, "%Y-%m-%d %H:%M:%S" ).timetuple() ) ) ) 
+    utime = str( int( time.mktime( datetime.strptime( dtime, "%Y-%m-%d %H:%M:%S" ).timetuple() ) ) )
     # utime = datetime.strptime(dtime, '%Y-%m-%d %H:%M:%S').timetuple()
     # utime = time.mktime(utime)
     # utime = str(int(utime))
@@ -28,8 +28,8 @@ def ts2dt(utime):
     return dtime
 
 if __name__ == '__main__':
-    ndt = getDateTime()
-    nut = getTimeStamp()
+    ndt = getDateTime() #str
+    nut = getTimeStamp()#str
     print "DATETIME = " + ndt
     print "TIMESTAMP = " + nut
     print "DateTime: {dtime} -> TimeStamp: {utime}".format(
